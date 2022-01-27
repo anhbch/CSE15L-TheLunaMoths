@@ -21,4 +21,23 @@ public class MarkdownParseTest {
         expectedOutPut.add("some-page.html");
         assertEquals(expectedOutPut, links);
     }
+
+    @Test
+    public void testFile2() throws IOException {
+        Path fileName = Path.of("test-file2.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
+
+    @Test
+    public void TestFile3() throws IOException {
+        Path fileName = Path.of("test-file3.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        expectedOutPut.add("https://validlink.com");
+        assertEquals(expectedOutPut, links);
+    }
 }
