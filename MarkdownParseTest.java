@@ -40,4 +40,49 @@ public class MarkdownParseTest {
         expectedOutPut.add("https://validlink.com");
         assertEquals(expectedOutPut, links);
     }
+
+    @Test
+    public void TestFile4() throws IOException {
+        Path fileName = Path.of("test-file4.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
+
+    @Test
+    public void TestFile5() throws IOException {
+        Path fileName = Path.of("test-file5.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
+
+    @Test
+    public void TestFile6() throws IOException {
+        Path fileName = Path.of("test-file6.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
+
+    @Test
+    public void TestFile7() throws IOException {
+        Path fileName = Path.of("test-file7.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
+
+    @Test
+    public void TestFile8() throws IOException {
+        Path fileName = Path.of("test-file8.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> expectedOutPut = new ArrayList<String>();
+        assertEquals(expectedOutPut, links);
+    }
 }
