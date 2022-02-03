@@ -90,4 +90,14 @@ public class MarkdownParseTest {
     public void testFail() throws IOException {
         assertEquals(2, 2);
     }
+
+    @Test
+    public void testFail2() throws IOException {
+        fail();
+    }
 }
+
+/** Terminal command
+ * javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
+ * java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+ */
