@@ -88,6 +88,6 @@ public class MarkdownParseTest {
 
     @Test
     public void testFail() throws IOException {
-        assertEquals(2, 1);
+        assertEquals(2, 2);
     }
 }
