@@ -89,6 +89,7 @@ public class MarkdownParseTest {
     @Test
     public void testFail() throws IOException {
         assertEquals(2, 2);
+        System.out.println("15l");
     }
 
     @Test
