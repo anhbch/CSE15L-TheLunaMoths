@@ -101,21 +101,21 @@ public class MarkdownParseTest {
     @Test
     public void TestSnippet1() throws IOException {
         String contents= Files.readString(Path.of("./snippet1.md"));
-        List<String> expect = List.of("google.com");
+        List<String> expect = List.of("google.com, google.com, ucsd.edu");
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 
     @Test
     public void TestSnippet2() throws IOException {
         String contents= Files.readString(Path.of("./snippet2.md"));
-        List<String> expect = List.of("a.com, b.com, a.com(()), example.com");
+        List<String> expect = List.of("a.com, a.com(()), example.com");
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 
     @Test
     public void TestSnippet3() throws IOException {
         String contents= Files.readString(Path.of("./snippet3.md"));
-        List<String> expect = List.of("https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, github.com, https://cse.ucsd.edu/");
+        List<String> expect = List.of("https://ucsd-cse15l-w22.github.io/");
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
 }
